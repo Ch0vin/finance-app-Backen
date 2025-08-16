@@ -12,7 +12,6 @@ origns =[
     "http://localhost:3000",
     
 ]
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origns,
@@ -31,8 +30,6 @@ class TransactionModel(TransactionBase):
 
     class Config:
         from_attributes = True
-
-
 
 def get_db():
     db = SessionLocal()
